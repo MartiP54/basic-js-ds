@@ -18,14 +18,16 @@ class Stack {
   }
   push(element) {
     this.st.push(element);
+    console.log(this.st);
   }
 
   pop() {
-    this.st.pop();
+    return this.st.pop();
+    
   }
 
   peek() {
-    return this.st;
+    return this.st.at(-1);
   }
 }
 
